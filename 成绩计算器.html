@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>成绩计算器</title>
+</head>
+<body>
+    <button onclick="CCC()">点击输入成绩</button>
+    <script type="text/javascript">  
+        function CCC() {
+            let AAA = parseInt(window.prompt("成绩："));
+            
+            if (AAA >= 90) {  
+                alert("优秀（666）");
+            }
+            else if(AAA >= 70) {
+                alert("一般（算你运气好）");
+            }
+            else if(AAA >= 60) { 
+                alert("及格（菜就多练）");
+            }  
+            else {
+                alert("不及格,(建议回炉重造)");
+            }
+        }  
+    </script>
+</body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    let A = "admin"; 
+let B = "123456"; 
+let C = ""; 
+let D = ""; 
+let E = 0; 
+
+do {
+    C = prompt("请输入用户名：");
+    D = prompt("请输入密码：");
+    E++; 
+
+    if (C === A && D === B) {
+        alert("登录成功！" + C + "！");
+    } else {
+        alert("错误");
+    }
+} while (C !== A || D !== B);
+
+console.log("用户登录的次数：" + E);
+</script>
+</body>
+</html>

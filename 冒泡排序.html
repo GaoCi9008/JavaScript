@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>冒泡排序</title>
+</head>
+<body>
+    <script>
+        function DDD(AAA){
+        for (var i = 0; i < AAA.length - 1; i++) {
+         for (var B = 0; B < AAA.length - 1 - i; B++) {
+        if (AAA[B] > AAA[B + 1]) {
+            var CCC = AAA[B];
+            AAA[B] = AAA[B + 1];
+            AAA[B + 1] = CCC;
+                }
+             }
+        }
+        return AAA;
+     }
+     var AAA1 = DDD([5,3,8,1]);
+console.log(AAA1);
+
+    </script>
+</body>
+</html>

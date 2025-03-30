@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>比大小</title>
+</head>
+<body>
+    <script>
+     const num1 = parseFloat(prompt("请输入第一个数字："));
+     const num2 = parseFloat(prompt("请输入第二个数字："));
+        function CCC(sum1, sum2) {
+            if (sum1 > sum2) {
+                return sum1 + "大";
+            } else if (sum1 < sum2) {
+                return sum2 + "大";
+            } else {
+                return "他俩相等";
+            }
+        }
+ const result = CCC(num1, num2);
+        alert(result);
+    </script>
+</body>
+</html>

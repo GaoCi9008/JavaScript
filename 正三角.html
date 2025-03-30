@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>正三角形</title>
+</head>
+<body>
+    <script>
+        function CCC(BBB) {
+            var AAA = '';
+            for (var i = 1; i <= BBB; i++) {
+                for (var j = 0; j < i; j++) {
+                    AAA += "*";
+                }
+                AAA += '\n';
+            }
+            return AAA;
+        }
+
+        var BBB = prompt('三角形的行数:');
+        if (BBB !== null) {
+            var DDD = CCC(parseInt(BBB, 10));
+            console.log(DDD);
+        }
+    </script>
+    在输入框里面输入打印心的数量，在页面中打印出来
+</body>
+</html>

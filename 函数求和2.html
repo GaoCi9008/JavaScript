@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>函数求和2</title>
+</head>
+<body>
+    <input type="number" id="start" placeholder="开始数字">
+    <input type="number" id="end" placeholder="结束数字">
+    <button onclick="CCC()">计算</button>
+    <p id="DDD"></p>
+
+    <script>
+        function CCC() {
+            const start = Number(document.getElementById('start').value);
+            const end = Number(document.getElementById('end').value);
+
+            var AAA = 0;
+            for (var i = start; i <= end; i++) {
+                AAA += i;
+            }
+            document.getElementById('DDD').textContent = `从 ${start} 到 ${end} 的和是：${AAA}`;
+        }
+    </script>
+</body>
+</html>

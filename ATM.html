@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ATM系统</title>
+</head>
+<body>
+    <button onclick="EEE()">点击进入ATM系统</button>
+    <script>
+        function EEE() {
+            let AAA = 100; 
+            let BBB;
+            do {
+                BBB = prompt(
+                    `请输入您要的操作：\n1. 存钱\n2. 取钱\n3. 显示余额\n4. 退出\n\n当前余额:${AAA} 元`
+                );
+                switch (BBB) {
+                    case '1': 
+                        var CCC = parseFloat(prompt("请输入存款金额："));
+                        if (!isNaN(CCC) && CCC > 0) {
+                            AAA += CCC;
+                            alert(`操作成功！当前余额：${AAA} 元`);
+                        } else {
+                            alert("操作无效，请重新操作");
+                        }
+                        break;
+                    case '2':
+                        var DDD = parseFloat(prompt("请输入取款金额："));
+                        if (!isNaN(DDD) && DDD > 0) {
+                            if (DDD > AAA) {
+                                alert("余额不足！");
+                            } else {
+                                AAA -= DDD;
+                                alert(`取款成功！当前余额：${AAA} 元`);
+                            }
+                        } else {
+                            alert("操作无效，请重新操作");
+                        }
+                        break;
+                    case '3':
+                        alert(`当前余额为：${AAA} 元`);
+                        break;
+                    case '4':
+                        alert("感谢使用！");
+                        break;
+                    default:
+                        if (BBB !== null) alert("请输入有效的操作编号(1-4)");
+                }
+            } while (BBB !== '4' && BBB !== null);
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>加减乘除</title>
+</head>
+<body>
+    <script>
+        function CCC(num1, num2, fuhao) {
+            switch (fuhao) {
+                case '+':
+                    return num1 + num2;
+                case '-':
+                    return num1 - num2;
+                case '*':
+                    return num1 * num2;
+                case '/':
+                    if (num2 === 0) {
+                        return "除数不能为0";
+                    }
+                    return num1 / num2;
+                default:
+                    return "无效";
+            }
+        }
+        const number1 = parseFloat(prompt("请输入第一个数字："));
+        const number2 = parseFloat(prompt("请输入第二个数字："));
+        const fuhao = prompt("请输入运算符（+、-、*、/):");
+        const AAA = CCC(number1, number2, fuhao);
+        alert("计算结果是：" + AAA);
+    </script>
+</body>
+</html>

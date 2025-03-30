@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>闰年平年计算器</title>
+</head>
+<body>
+    <button onclick="CCC()">点击输入年份</button>
+<script type="text/javascript"> 
+   function CCC() {
+            let AAA= parseInt(prompt("年份"));
+            if (AAA % 4==0 &&AAA %100!=0 ||AAA % 400==0) {  
+                alert("闰年");
+            }
+            else { 
+                alert("平年");
+            }
+        }
+</script>
+</body>
+</html>

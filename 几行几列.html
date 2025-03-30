@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>几行几列</title>
+</head>
+<body>
+    <script>
+        function CCC(AAA, BBB) {
+            var CCC = '';
+            for (var i = 0; i < AAA; i++) {
+                for (var j = 0; j < BBB; j++) {
+                    CCC += "*";
+                }
+                CCC += '\n';
+            }
+            return CCC;
+        }
+
+        var AAA = prompt('三角形的行数:');
+        var BBB = prompt('三角形的列数:');
+        if (AAA !== null && BBB !== null) {
+            var CCC = CCC(parseInt(AAA, 10), parseInt(BBB, 10));
+            console.log(CCC);
+        }
+    </script>
+</body>
+</html>

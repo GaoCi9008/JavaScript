@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>最大值（return）</title>
+</head>
+<body>
+    <script>
+        function CCC(A) {
+            if (A.length === 0) {
+                return "数组为空,ERROR";
+            }
+            let max = A[0]; 
+            for (let i = 1; i < A.length; i++) {
+                if (A[i] > max) {
+                    max = A[i]; 
+                }
+            }
+            return max; 
+        }
+        const input = prompt("数字（用空格分开）：");
+        const numbers = input.split(" ").map(Number); 
+        const maxNumber = CCC(numbers);
+        alert("数组中的最大值是：" + maxNumber);
+    </script>
+</body>
+</html>

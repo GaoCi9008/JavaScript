@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>数组案例1</title>
+</head>
+<body>
+    <script>
+        var AAA = [];
+        for (var i = 1; i <= 10; i++) {
+            AAA.push(i);
+        }
+        console.log("1到10的整数:", AAA);
+        var BBB = [];
+        for (var i = 1; i <= 100; i++) {
+            BBB.push(i);
+        }
+        console.log("1到100的整数:", BBB);
+        var CCC = [2, 6, 1, 7, 4];
+        var sum = 0;
+        for (var i = 0; i < CCC.length; i++) {
+            sum += CCC[i];
+        }
+        console.log("26174的和:", sum);
+        var average = sum / CCC.length;                                             
+        console.log("26174的平均值:", average);
+    </script>
+</body>
+</html>

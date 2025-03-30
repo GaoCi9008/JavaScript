@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>判断时间</title>
+</head>
+<body>
+    <button onclick="CCC()">点击输入时间</button>
+    <script type="text/javascript"> 
+     function CCC() {
+    let AAA= parseInt(window.prompt("时间"));
+    if (AAA >= 0 && AAA < 7) {
+    alert("深夜好 ");
+    } else if (AAA >= 7 && AAA < 11) {
+    alert("早上好 ");
+    } else if (AAA >= 11 && AAA < 13) {
+    alert("中午好 ");
+    }else if (AAA >= 13 && AAA < 18) {
+    alert("下午好 ");
+    }else if (AAA >= 18 && AAA <= 24) {
+    alert("晚上好 ");
+    }else{
+    alert("你好，三体人！！！")
+    }
+    }
+    </script>
+</body>
+</html>
