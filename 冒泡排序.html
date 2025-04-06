@@ -7,21 +7,22 @@
 </head>
 <body>
     <script>
-        function DDD(AAA){
-        for (var i = 0; i < AAA.length - 1; i++) {
-         for (var B = 0; B < AAA.length - 1 - i; B++) {
-        if (AAA[B] > AAA[B + 1]) {
-            var CCC = AAA[B];
-            AAA[B] = AAA[B + 1];
-            AAA[B + 1] = CCC;
+        function DDD() {
+            var AAA = arguments[0];
+            for (var i = 0; i < AAA.length - 1; i++) {
+                for (var B = 0; B < AAA.length - 1 - i; B++) {
+                    if (AAA[B] > AAA[B + 1]) {
+                        var CCC = AAA[B];
+                        AAA[B] = AAA[B + 1];
+                        AAA[B + 1] = CCC;
+                    }
                 }
-             }
+            }
+            return AAA;
         }
-        return AAA;
-     }
-     var AAA1 = DDD([5,3,8,1]);
-console.log(AAA1);
 
+        var AAA1 = DDD([5, 3, 8, 1]);
+        console.log(AAA1);
     </script>
 </body>
 </html>
